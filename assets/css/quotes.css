@@ -17,6 +17,10 @@ body {
 	padding-bottom: 10px;
 }
 
+#heading {
+	text-align: center;
+}
+
 #quote {
 	background: #f5ecf5;
 	font-size: 1.6em;
