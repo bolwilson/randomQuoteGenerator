@@ -19,14 +19,21 @@ $(function() {
 		$.getJSON('https://bolwilson.github.io/data/quotes.json')
 		.done( function(data) {
 			quotes = data;
+			
 			$('#getMessage').on('click', function() {
-				$('#quote').fadeIn().html(quotes[rangeNumber(2, 64)].quote);
+				var $currentQuote = quotes[rangeNumber(2, 64)].quote;
+				$('#quote').html($currentQuote);
+				$('.twitter-share-button').attr('data-text', $currentQuote);
+
 			});
+			
 		}).fail( function() {
-			$('#getMessage').html('Sorry! We could not load the quotes at the moment');
+			$('#quote').html('Sorry! We could not load the quotes at the moment');
 		});
 	}
 
 	loadQuotes();
+
+
 
 });

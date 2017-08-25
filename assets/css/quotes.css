@@ -12,21 +12,27 @@ body {
 
 #content {
 	margin-top: 100px;
-	background: #fdf;
+	background: #999;
 	box-shadow: 2px 3px 3px #2df;
 	padding-bottom: 10px;
 }
 
 #quote {
+	background: #f5ecf5;
 	font-size: 1.6em;
 	text-align: center;
 	width: 100%;
-	: 200px;
-	border: 2px solid #43d;
+	min-height: 200px;
+	border: 2px solid #9690c7;
 	border-radius: 5px;
 	padding-top: 30px;
 }
 
-.btn-info {
+.twitter-share-button {
 	float: right;
+	background: #337ab7;
+}
+
+.link {
+	padding-left: 10px;
 }
