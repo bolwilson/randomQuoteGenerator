@@ -22,7 +22,7 @@ $(function() {
 			
 			$('#getMessage').on('click', function() {
 				var $currentQuote = quotes[rangeNumber(2, 64)].quote;
-				$('#quote').html($currentQuote);
+				$('#quote').html($currentQuote).fadeIn(1500);
 				$('.twitter-share-button').attr('data-text', $currentQuote);
 
 			});
